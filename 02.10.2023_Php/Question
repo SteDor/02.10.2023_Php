@@ -1,0 +1,18 @@
+<?php
+    $Answers = array(''); 
+    // string
+    $QuestionCategory = '';
+    $QuestionText = '';
+    $DescriptionQuestion = '';
+    // bool
+    $CheckedAnswerUser = '';
+
+    function GetQuestion(){};
+
+    function CheckAnswer(){};
+
+    function GetAnswer(){};
+
+
+
+?>
