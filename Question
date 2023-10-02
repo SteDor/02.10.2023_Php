@@ -1,0 +1,84 @@
+<?php
+class Question{
+    protected $Answers = array(''); 
+    // string
+    protected $QuestionCategory;
+    protected $QuestionText;
+    protected $DiscriptionQuestion;
+    // bool
+    
+    protected $CheckedAnswerUser;
+
+    function __construct($Answers, $QuestionCategory, $QuestionText, $DiscriptionQuestion, $CheckedAnswerUser) {
+        $this->Answers = $Answers;
+        $this->QuestionCategory = $QuestionCategory;
+        $this->QuestionText = $QuestionText;
+        $this->DiscriptionQuestion = $DiscriptionQuestion;
+        $this->CheckedAnswerUser =$CheckedAnswerUser;
+
+        }
+    function GetQuestion(){}
+     
+     function CheckAnswer(){}
+     
+     function GetAnswer(){}
+
+
+    function get_QuestionText() {
+        return $this->QuestionText;
+      }
+
+    
+
+	public function getQuestionCategory() {
+		return $this->QuestionCategory;
+	}
+	
+
+	public function setQuestionCategory($QuestionCategory): self {
+		$this->QuestionCategory = $QuestionCategory;
+		return $this;
+	}
+
+	public function getAnswers() {
+		return $this->Answers;
+	}
+	
+	public function setAnswers($Answers): self {
+		$this->Answers = $Answers;
+		return $this;
+	}
+	
+	public function getQuestionText() {
+		return $this->QuestionText;
+	}
+	
+	public function setQuestionText($QuestionText): self {
+		$this->QuestionText = $QuestionText;
+		return $this;
+	}
+
+	public function getDiscriptionQuestion() {
+		return $this->DiscriptionQuestion;
+	}
+	
+	public function setDiscriptionQuestion($DiscriptionQuestion): self {
+		$this->DiscriptionQuestion = $DiscriptionQuestion;
+		return $this;
+	}
+
+	public function getCheckedAnswerUser() {
+		return $this->CheckedAnswerUser;
+	}
+
+	public function setCheckedAnswerUser($CheckedAnswerUser): self {
+		$this->CheckedAnswerUser = $CheckedAnswerUser;
+		return $this;
+	}
+}
+
+    $question = new Question(['dasjk', 5 , 'nb'], 'Mathe', 'Wie lautet die Frage', 'XxXxXxXxXx', false);
+ 
+
+
+?>
