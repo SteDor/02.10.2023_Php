@@ -19,9 +19,9 @@ abstract class Question{
         }
     function GetQuestion(){}
      
-     function CheckAnswer(){}
-     
-     function GetAnswer(){}
+    function CheckAnswer(){}
+    
+    function GetAnswer(){}
 
 
     function get_QuestionText() {
