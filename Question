@@ -1,5 +1,5 @@
 <?php
-class Question{
+abstract class Question{
     protected $Answers = array(''); 
     // string
     protected $QuestionCategory;
@@ -77,7 +77,7 @@ class Question{
 	}
 }
 
-    $question = new Question(['dasjk', 5 , 'nb'], 'Mathe', 'Wie lautet die Frage', 'XxXxXxXxXx', false);
+    //$question = new Question(['dasjk', 5 , 'nb'], 'Mathe', 'Wie lautet die Frage', 'XxXxXxXxXx', false);
  
 
 
